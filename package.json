@@ -1,0 +1,25 @@
+{
+  "name": "tp2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "verifier": "tsc --noEmit",
+    "ex1": "node src/compte.ts",
+    "ex2": "node src/repository.ts",
+    "ex3": "node src/produits.ts"
+  },
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  },
+  "type": "module",
+  "dependencies": {
+    "tsconfig": "^7.0.0"
+  }
+}

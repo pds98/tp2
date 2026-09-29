@@ -1,0 +1,23 @@
+class CompteBancaire {
+    private solde: number;          // inaccessible à l'extérieur
+    readonly numero: string;       // constante après init
+
+    constructor(numero: string, soldeInitial = 0) {
+        this.numero = numero;
+        this.solde = soldeInitial;
+    }
+
+    deposer(montant: number): void {
+        if (montant <= 0) throw new Error('Montant invalide');
+        this.solde += montant;
+    }
+
+    consulterSolde(): number {
+        return this.solde;
+    }
+}
+
+const compte = new CompteBancaire('A-100', 500);
+compte.deposer(200);
+//console.log(compte.solde);  // ❌ private
+console.log(compte.consulterSolde());  // 700
