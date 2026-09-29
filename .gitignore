@@ -3,3 +3,8 @@ dist/
 .DS_Store
 *.log
 .env
+
+# fichiers exclus du repo
+package-lock.json
+index.js
+src/brouillon.txt
